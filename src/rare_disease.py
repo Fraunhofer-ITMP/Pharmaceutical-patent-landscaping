@@ -4,17 +4,12 @@
 
 import logging
 import os
-import xml.etree.ElementTree as ET
-
 import pandas as pd
+import xml.etree.ElementTree as ET
 from tqdm import tqdm
-from pemt.chemical_extractor.experimental_data_extraction import extract_chemicals
-from pemt.constants import PATENT_DIR
-from pemt.patent_extractor.patent_chemical_harmonizer import harmonize_chemicals
-from pemt.patent_extractor.patent_enrichment import extract_patent
 
-from src.assignee_ontology import harmonize_names
-from src.constants import PATENT_DIR, GRAPH_DIR, BASE_FILES, CHROMEDRIVER_PATH
+from src.constants import GRAPH_DIR, BASE_FILES
+from src.util import enrich_patent
 
 logger = logging.getLogger(__name__)
 
@@ -61,46 +56,14 @@ def load_orphanet_df():
     return df
 
 
-def run_from_gene_pipeline():
-    """Extracting patent data using PEMT tool."""
-
+if __name__ == '__main__':
     orphanet_df = load_orphanet_df()
     genes = orphanet_df['gene_symbol'].tolist()
     name = 'orphanet'  # Analysis name
     os = 'windows'
 
-    extract_chemicals(
-        analysis_name=name,
+    enrich_patent(
+        name=name,
         gene_list=genes,
-        is_uniprot=False,
+        os_name=os,
     )
-
-    harmonize_chemicals(analysis_name=name, from_genes=True)
-
-    patent_df = extract_patent(
-        analysis_name=name,
-        chrome_driver_path=CHROMEDRIVER_PATH,
-        os_system=os,
-        patent_year=2000,
-    )
-
-    if patent_df.empty:
-        logger.info(f"No patents found!")
-        return None
-
-    logger.info(f"Done with retrieval of patents")
-    logger.info(f"Data file can be found under {PATENT_DIR}")
-    return
-
-
-def data_normalization():
-    harmonize_names(
-        patent_df=pd.read_csv(f'{PATENT_DIR}/ad_patent_data.tsv', sep='\t'),
-        analysis_name='ad'
-    )
-
-
-
-
-if __name__ == '__main__':
-    create_graph()
