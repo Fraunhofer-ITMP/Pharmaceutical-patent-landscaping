@@ -4,3 +4,5 @@ py2neo
 pybel
 pemt
 jupyter
+seaborn
+matplotlib
