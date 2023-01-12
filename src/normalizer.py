@@ -53,6 +53,11 @@ def harmonize_names(
     """Method to normalize the assignee names across the patent cohort."""
 
     patent_df['assignee'] = patent_df['assignee'].str.strip()  # remove leading white spaces
+    patent_df['assignee'] = patent_df['assignee'].str.replace(
+        'é', 'e').replace('É', 'E').replace('é', 'e').replace('—', '-').replace('ò', 'o').replace('Ö', 'O').replace(
+        'ä', 'a').replace('Ä', 'A').replace('ü', 'u').replace('Ü', 'U').replace('Ó', 'O').replace('ó', 'o').replace(
+        'È', 'E').replace('A′', 'A').replace('À', 'A').replace('Í', 'I').replace('Ç', 'C').replace('Å', 'A').replace(
+        'á', 'a').replace('Á', 'A').replace('Ã', 'A').replace('Ø', 'O').replace('Ł', 'L')
 
     organization_mapper = pd.read_csv(
         f'{MAPPER_DIR}/assignee/organization.tsv', sep='\t', index_col='name', dtype=str, encoding='ISO-8859-1'
