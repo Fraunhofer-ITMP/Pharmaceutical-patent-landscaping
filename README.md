@@ -14,6 +14,10 @@
 
 The repository contains the code base for generating and analysing patent corpora for drug discovery aspects.
 
+<p align="center">
+  <img src="data/figures/figure_1.jpg">
+</p>
+
 ## Publication
 
 To understand in depth the applicability of patent landscaping in drug research and discovery, we recommend reading our
@@ -32,12 +36,6 @@ biomedical knowledge graph representing the Alzheimer's disease landscape, as th
 corpora generation.
 
 For generation of the patent corpora, we made use of the [PEMT](https://github.com/Fraunhofer-ITMP/PEMT) tool.
-
-## Workflow overview
-
-<p align="center">
-  <img src="data/figures/figure_1.jpg">
-</p>
 
 ## Code reproducibility
 
