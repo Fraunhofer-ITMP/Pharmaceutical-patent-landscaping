@@ -1,4 +1,16 @@
-## Pharmaceutical patent landscaping: A novel approach to understand patents from the drug discovery perspective
+<h1 align="center">
+  Pharmaceutical patent landscaping: A novel approach to understand patents from the drug discovery perspective
+  <br/>
+
+[//]: # (    <a href='https://pemt.readthedocs.io/en/latest/?badge=latest'>)
+
+[//]: # (        <img src='https://readthedocs.org/projects/pemt/badge/?version=latest' alt='Documentation Status' />)
+
+[//]: # (    </a>)
+
+[//]: # ( [![DOI:10.1093/bioinformatics/btac716]&#40;http://img.shields.io/badge/DOI-110.1093/bioinformatics/btac716-B31B1B.svg&#41;]&#40;https://doi.org/10.1093/bioinformatics/btac716&#41;)
+
+</h1>
 
 The repository contains the code base for generating and analysing patent corpora for drug discovery aspects.
 
