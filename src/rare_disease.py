@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Script for creation of Patent-enriched rare disease BEL knowledge graph."""
+"""Script for generation of patent corpora for rare diseases."""
 
 import logging
 import os
@@ -8,8 +8,8 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 from tqdm import tqdm
 
-from src.constants import GRAPH_DIR, BASE_FILES
-from src.util import enrich_patent
+from src.constants import GRAPH_DIR, BASE_FILES, PATENT_DIR
+from src.util import enrich_patent, annotate_genes, chemical_to_smiles, get_chemical_max_phase
 
 logger = logging.getLogger(__name__)
 
@@ -66,4 +66,17 @@ if __name__ == '__main__':
         name=name,
         gene_list=genes,
         os_name=os,
+    )
+
+    # Get chemical mapping file
+    patent_df = pd.read_csv(f'{PATENT_DIR}/orphanet_normalized_patent_data.tsv', sep='\t')
+    chemical_to_smiles(
+        chemical_patent_df=patent_df,
+        analysis_name=name
+    )
+
+    # Chemical phase annotations
+    get_chemical_max_phase(
+        chemical_patent_df=patent_df,
+        analysis_name=name
     )
