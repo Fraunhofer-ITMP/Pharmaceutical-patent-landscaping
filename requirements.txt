@@ -1,7 +1,5 @@
 pandas
 tqdm
-py2neo
-pybel
 pemt
 jupyter
 seaborn
