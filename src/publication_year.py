@@ -30,7 +30,6 @@ def combine_publications():
         combined_df = pd.concat([combined_df, df], ignore_index=True)
 
     combined_df.drop_duplicates(subset=['target_chembl_id', 'publication_year'], inplace=True)
-    combined_df = combined_df[combined_df['publication_year'] < 2000]
     combined_df.to_csv('target_publication_year.tsv.gz', index=False, sep='\t', compression='gzip')
 
 
