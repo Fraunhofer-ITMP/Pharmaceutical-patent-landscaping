@@ -1,12 +1,49 @@
-@article {Gadiya2023.02.10.527980,
-  author = {Gadiya, Yojana and Gribbon, Philip and Hofmann-Apititus, Martin and Zaliani, Andrea},
-  title = {Pharmaceutical patent landscaping: A novel approach to understand patents from the drug discovery perspective},
-  elocation-id = {2023.02.10.527980},
-  year = {2023},
-  doi = {10.1101/2023.02.10.527980},
-  publisher = {Cold Spring Harbor Laboratory},
-  abstract = {Patents play a crucial role in the drug discovery process by providing legal protection for discoveries and incentivising investments in research and development. By identifying patterns within patent data resources, researchers can gain insight into the market trends and priorities of the pharmaceutical and biotechnology industries, as well as providing additional perspectives on more fundamental aspects such as the emergence of potential new drug targets. In this paper, we used the patent enrichment tool, PEMT, to extract, integrate, and analyse patent literature for rare diseases (RD) and Alzheimers disease (AD). This is followed by a systematic review of the underlying patent landscape to decipher trends and applications in patent for these diseases. To do so, we discuss prominent organisations involved in drug discovery research in AD and RD. This allows us to gain an understanding of the importance of AD and RD from specific organisational (pharmaceutical or university) perspectives. Next, we analyse the historical focus of patents in relation to individual therapeutic targets and correlate them with market scenarios allowing the identification of prominent targets for a disease. Lastly, we identified drug repurposing activities within the two diseases with the help of patents. This resulted in identifying existing repurposed drugs and novel potential therapeutic approaches applicable to the indication areas. The study demonstrates the expanded applicability of patent documents from legal to drug discovery, design, and research, thus, providing a valuable resource for future drug discovery efforts.Competing Interest StatementThe authors have declared no competing interest.},
-  url = {https://www.biorxiv.org/content/early/2023/02/13/2023.02.10.527980},
-  eprint = {https://www.biorxiv.org/content/early/2023/02/13/2023.02.10.527980.full.pdf},
-  journal = {bioRxiv}
-}
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Gadiya"
+  given-names: "Yojana"
+  orcid: "https://orcid.org/0000-0002-7683-0452"
+  affiliation: "Fraunhofer Institute of Translation Medicine and Pharmacology"
+- family-names: "Gribbon"
+  given-names: "Philip"
+  orcid: "https://orcid.org/0000-0001-7655-2459"
+  affiliation: "Fraunhofer Institute of Translation Medicine and Pharmacology"
+- family-names: "Hofmann-Apitius"
+  given-names: "Martin"
+  orcid: "https://orcid.org/0000-0001-9012-6720"
+  affiliation: "Fraunhofer-Institutszentrum Schloss Birlinghoven"
+- family-names: "Andrea"
+  given-names: "Zaliani"
+  orcid: "https://orcid.org/0000-0002-1740-8390"
+  affiliation: "Fraunhofer Institute of Translation Medicine and Pharmacology"
+title: "Pharmaceutical patent landscaping"
+version: 0.0.1
+doi: 10.1101/2023.02.10.527980
+date-released: 2023-02-10
+url: "https://github.com/Fraunhofer-ITMP/Pharmaceutical-patent-landscaping"
+license: MIT License
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Gadiya"
+    given-names: "Yojana"
+    orcid: "https://orcid.org/0000-0002-7683-0452"
+    affiliation: "Fraunhofer Institute of Translation Medicine and Pharmacology"
+  - family-names: "Gribbon"
+    given-names: "Philip"
+    orcid: "https://orcid.org/0000-0001-7655-2459"
+    affiliation: "Fraunhofer Institute of Translation Medicine and Pharmacology"
+  - family-names: "Hofmann-Apitius"
+    given-names: "Martin"
+    orcid: "https://orcid.org/0000-0001-9012-6720"
+    affiliation: "Fraunhofer-Institutszentrum Schloss Birlinghoven"
+  - family-names: "Andrea"
+    given-names: "Zaliani"
+    orcid: "https://orcid.org/0000-0002-1740-8390"
+    affiliation: "Fraunhofer Institute of Translation Medicine and Pharmacology"
+  doi: "10.1101/2023.02.10.527980"
+  journal: "bioRxiv"
+  month: 02
+  title: "Pharmaceutical patent landscaping: A novel approach to understand patents from the drug discovery perspective"
+  year: 2023
