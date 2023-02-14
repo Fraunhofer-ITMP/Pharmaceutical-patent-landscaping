@@ -2,12 +2,6 @@
   Pharmaceutical patent landscaping: A novel approach to understand patents from the drug discovery perspective
   <br/>
 
-[//]: # (    <a href='https://pemt.readthedocs.io/en/latest/?badge=latest'>)
-
-[//]: # (        <img src='https://readthedocs.org/projects/pemt/badge/?version=latest' alt='Documentation Status' />)
-
-[//]: # (    </a>)
-
 [//]: # ( [![DOI:10.1093/bioinformatics/btac716]&#40;http://img.shields.io/badge/DOI-110.1093/bioinformatics/btac716-B31B1B.svg&#41;]&#40;https://doi.org/10.1093/bioinformatics/btac716&#41;)
 
 </h1>
@@ -22,11 +16,11 @@ The repository contains the code base for generating and analysing patent corpor
 
 To understand in depth the applicability of patent landscaping in drug research and discovery, we recommend reading our
 publication titled [**Pharmaceutical patent landscaping: A novel approach to understand patents from the drug discovery
-perspective**]().
+perspective**](https://doi.org/10.1101/2023.02.10.527980).
 
-[//]: # (> Yojana Gadiya, Andrea Zaliani, Philip Gribbon, Martin Hofmann-Apitius, PEMT: a patent enrichment tool for drug discovery, *Bioinformatics*, 2022;, btac716, [https://doi.org/10.1093/bioinformatics/btac716]&#40;https://doi.org/10.1093/bioinformatics/btac716&#41;)
+> Pharmaceutical patent landscaping: A novel approach to understand patents from the drug discovery perspective. Yojana Gadiya, Philip Gribbon, Martin Hofmann-Apititus, Andrea Zaliani. *bioRxiv* 2023.02.10.527980; doi:[https://doi.org/10.1101/2023.02.10.527980](https://doi.org/10.1101/2023.02.10.527980)
 
-If you have found this work useful, please consider citing
+If you have found this work useful, please consider citing us.
 
 ## Resource overview
 
