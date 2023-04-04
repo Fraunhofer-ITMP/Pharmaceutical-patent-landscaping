@@ -3,8 +3,7 @@
   <br/>
 
  [![DOI:10.1101/2023.02.10.527980](http://img.shields.io/badge/Preprint-10.1101/2023.02.10.527980-B31B1B.svg)](https://doi.org/10.1101/2023.02.10.527980)
-
-[//]: # ( [![DOI:10.1093/bioinformatics/btac716]&#40;http://img.shields.io/badge/DOI-110.1093/bioinformatics/btac716-B31B1B.svg&#41;]&#40;https://doi.org/10.1093/bioinformatics/btac716&#41;)
+ [![DOI:10.1016/j.ailsci.2023.100069](http://img.shields.io/badge/AI_in_Life_Science-10.1101/2023.02.10.527980-2986CC.svg)](https://doi.org/10.1016/j.ailsci.2023.100069)
 
 </h1>
 
