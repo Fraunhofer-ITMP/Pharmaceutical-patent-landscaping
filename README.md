@@ -124,3 +124,6 @@ issue [here](https://github.com/Fraunhofer-ITMP/Pharmaceutical-patent-landscapin
     |-- rare_disease.py
     `-- util.py
 ```
+
+# Funding
+This project has been funded by EOSC-Life which has received funding from the European Union's Horizon 2020 programme under grant agreement number 824087.
